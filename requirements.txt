@@ -1,0 +1,68 @@
+# Portfolio SDE - Requirements
+
+## Node.js Dependencies (package.json)
+- next@15.4.1
+- react@18.2.0
+- react-dom@18.2.0
+- typescript@5.3.3
+- tailwindcss@3.3.6
+- framer-motion@10.18.0
+- lucide-react@0.263.1
+- @heroicons/react@2.0.18
+- clsx@2.0.0
+- tailwind-merge@2.2.0
+
+## Development Dependencies
+- @types/node@20.10.0
+- @types/react@18.2.45
+- @types/react-dom@18.2.18
+- @tailwindcss/postcss@3.3.6
+- eslint@8.55.0
+- eslint-config-next@15.4.1
+- @eslint/eslintrc@2.1.4
+
+## System Requirements
+- Node.js 18.17.0 or higher
+- npm 9.0.0 or higher (or yarn 1.22.0+)
+- Git (for version control)
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Optional Tools
+- VS Code (recommended editor)
+- VS Code Extensions:
+  - ES7+ React/Redux/React-Native snippets
+  - Tailwind CSS IntelliSense
+  - TypeScript Importer
+  - Prettier
+  - ESLint
+  - Auto Rename Tag
+  - Bracket Pair Colorizer
+  - GitLens
+
+## Performance Optimizations
+- Next.js Image optimization
+- Framer Motion lazy loading
+- Code splitting with dynamic imports
+- Tailwind CSS purging
+- TypeScript strict mode
+
+## Deployment Platforms
+- Vercel (recommended)
+- Netlify
+- GitHub Pages
+- AWS Amplify
+- Cloudflare Pages
+
+## Additional Features
+- Responsive design (mobile-first)
+- Dark theme by default
+- Smooth scrolling animations
+- SEO optimized
+- Accessibility features
+- Fast loading times
+- Modern browser APIs
