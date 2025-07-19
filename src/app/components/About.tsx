@@ -179,11 +179,11 @@ const About = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-3 lg:gap-4 mt-6 lg:mt-8">
                 <div className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-lg lg:rounded-xl p-3 lg:p-4 text-center">
-                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">3+</div>
-                  <div className="text-xs lg:text-sm text-gray-300">Years Experience</div>
+                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">6+</div>
+                  <div className="text-xs lg:text-sm text-gray-300">Months Experience</div>
                 </div>
                 <div className="bg-gradient-to-r from-green-500/20 to-teal-600/20 rounded-lg lg:rounded-xl p-3 lg:p-4 text-center">
-                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">25+</div>
+                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">15++</div>
                   <div className="text-xs lg:text-sm text-gray-300">Projects Completed</div>
                 </div>
               </div>
