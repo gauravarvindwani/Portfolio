@@ -29,25 +29,26 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/20"></div>
         
-        {/* Floating particles */}
-        {typeof window !== 'undefined' && [...Array(20)].map((_, i) => (
+        {/* Floating particles - Reduced for performance */}
+        {typeof window !== 'undefined' && [...Array(10)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-blue-400/30 rounded-full"
+            className="absolute w-2 h-2 bg-blue-400/20 rounded-full"
             initial={{ 
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * (window.innerWidth || 1200),
+              y: Math.random() * (window.innerHeight || 800),
               opacity: 0
             }}
             animate={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              opacity: [0, 1, 0]
+              x: Math.random() * (window.innerWidth || 1200),
+              y: Math.random() * (window.innerHeight || 800),
+              opacity: [0, 0.6, 0]
             }}
             transition={{
-              duration: Math.random() * 10 + 10,
+              duration: Math.random() * 8 + 12,
               repeat: Infinity,
-              repeatType: 'reverse'
+              repeatType: 'reverse',
+              ease: 'linear'
             }}
           />
         ))}
