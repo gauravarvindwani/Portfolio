@@ -111,8 +111,8 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-slate-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-12 lg:py-20 bg-slate-800/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:ml-20">
         <div 
           ref={headingRef}
           className={`section-heading ${headingVisible ? 'animate-in' : ''}`}
@@ -123,7 +123,7 @@ const Projects = () => {
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
                 Projects I Build
               </span>
@@ -136,7 +136,7 @@ const Projects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
         >
           {projects.map((project, index) => (
             <motion.div
@@ -147,7 +147,7 @@ const Projects = () => {
               className="group relative bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300"
             >
               {/* Project Image */}
-              <div className="relative h-48 overflow-hidden rounded-t-xl">
+              <div className="relative h-32 sm:h-40 lg:h-48 overflow-hidden rounded-t-xl">
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-80`}></div>
                 
                 {/* Image Placeholder */}
@@ -191,9 +191,9 @@ const Projects = () => {
               </div>
 
               {/* Project Info */}
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                <p className="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
+              <div className="p-4 lg:p-6">
+                <h3 className="text-lg lg:text-xl font-semibold text-white mb-2">{project.title}</h3>
+                <p className="text-gray-400 mb-4 text-xs lg:text-sm leading-relaxed">{project.description}</p>
                 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">

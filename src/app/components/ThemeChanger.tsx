@@ -47,7 +47,7 @@ const ThemeChanger = () => {
       initial={{ opacity: 0, y: -20, scale: 0.8 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="fixed top-4 right-20 z-50"
+      className="fixed top-4 right-4 lg:right-20 z-50"
     >
       <motion.button
         onClick={toggleTheme}

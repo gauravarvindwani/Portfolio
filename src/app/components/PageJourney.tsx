@@ -116,7 +116,7 @@ const PageJourney = () => {
   };
 
   return (
-    <div className="fixed left-2 lg:left-6 top-1/4 transform -translate-y-1/4 z-40 block">
+    <div className="fixed left-4 lg:left-6 top-1/4 transform -translate-y-1/4 z-40 hidden lg:block">
       <div className="relative">
         {/* Progress Line */}
         <div className="absolute left-5 top-0 w-0.5 h-96 bg-slate-700/50"></div>

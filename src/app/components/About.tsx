@@ -128,8 +128,8 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-slate-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-12 lg:py-20 bg-slate-800/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:ml-20">
         <div 
           ref={headingRef}
           className={`section-heading ${headingVisible ? 'animate-in' : ''}`}
@@ -140,7 +140,7 @@ const About = () => {
             onMouseLeave={handleMouseLeave}
             className="mystical-heading-card mystical-card-ancient text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
                 Know About Me
               </span>
@@ -154,37 +154,37 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 mb-16"
+          className="bg-slate-800/50 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 border border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 mb-8 lg:mb-16"
         >
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
             {/* Left Side - Info */}
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white mb-6">About Me</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6">About Me</h3>
+              <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
                 I am a passionate Backend Developer and AI/ML Engineer with extensive hands-on experience 
                 in Python development, DevOps practices, and data science. My journey started with curiosity about 
                 building robust, scalable systems and evolved into exploring intelligent solutions through machine learning.
               </p>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
                 I specialize in backend development using Python frameworks like FastAPI and Django, combined with 
                 AI/ML expertise gained through internship experience in AI/ML departments. My technical skills span 
                 from data science and machine learning to cloud infrastructure and DevOps automation.
               </p>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
                 I believe in building intelligent, reliable systems that leverage both traditional software engineering 
                 and modern AI/ML techniques. My approach combines scalable backend architectures with data-driven 
                 insights to create solutions that are both technically sound and business-impactful.
               </p>
               
               {/* Stats */}
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-xl p-4 text-center">
-                  <div className="text-3xl font-bold text-white mb-1">3+</div>
-                  <div className="text-sm text-gray-300">Years Experience</div>
+              <div className="grid grid-cols-2 gap-3 lg:gap-4 mt-6 lg:mt-8">
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-lg lg:rounded-xl p-3 lg:p-4 text-center">
+                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">3+</div>
+                  <div className="text-xs lg:text-sm text-gray-300">Years Experience</div>
                 </div>
-                <div className="bg-gradient-to-r from-green-500/20 to-teal-600/20 rounded-xl p-4 text-center">
-                  <div className="text-3xl font-bold text-white mb-1">25+</div>
-                  <div className="text-sm text-gray-300">Projects Completed</div>
+                <div className="bg-gradient-to-r from-green-500/20 to-teal-600/20 rounded-lg lg:rounded-xl p-3 lg:p-4 text-center">
+                  <div className="text-2xl lg:text-3xl font-bold text-white mb-1">25+</div>
+                  <div className="text-xs lg:text-sm text-gray-300">Projects Completed</div>
                 </div>
               </div>
               
@@ -258,7 +258,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
         >
           {expertiseAreas.map((area, index) => (
             <motion.div
