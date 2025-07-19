@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description: "Modern portfolio website showcasing software development projects and skills",
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

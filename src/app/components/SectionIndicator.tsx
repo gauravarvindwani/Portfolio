@@ -79,16 +79,15 @@ const SectionIndicator = () => {
         <motion.div
           initial={{ opacity: 0, y: -50, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: -50, scale: 0.8 }}
-          transition={{ 
-            duration: 0.5, 
-            ease: 'easeOut'
-          }}
-          exit={{
+          exit={{ 
             opacity: 0, 
             y: -50, 
             scale: 0.8,
             transition: { duration: 0.3 }
+          }}
+          transition={{ 
+            duration: 0.5, 
+            ease: 'easeOut'
           }}
           className="fixed top-20 left-1/2 transform -translate-x-1/2 z-40 pointer-events-none"
         >

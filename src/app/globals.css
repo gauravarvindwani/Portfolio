@@ -649,6 +649,35 @@ section {
   .page-journey-mobile {
     transform: scale(0.8);
   }
+  
+  /* Mobile navbar positioning */
+  nav.fixed {
+    max-width: calc(100vw - 2rem);
+  }
+  
+  /* Ensure proper mobile layout */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Mobile section padding */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Mobile grid adjustments */
+  .grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Mobile typography adjustments */
+  .typing-effect {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {

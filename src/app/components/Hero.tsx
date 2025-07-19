@@ -110,9 +110,9 @@ const Hero = () => {
           <motion.h1
             custom={1}
             variants={textVariants}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold"
           >
-            <span className="block">Hi, I'm</span>
+            <span className="block">Hi, I&apos;m</span>
             <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Gaurav Wani
             </span>
@@ -121,7 +121,7 @@ const Hero = () => {
           <motion.p
             custom={1}
             variants={textVariants}
-            className="text-xl sm:text-2xl lg:text-3xl text-gray-300 dark:text-gray-300 light:text-gray-600 font-light"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 dark:text-gray-300 light:text-gray-600 font-light"
           >
             <span className="typing-effect">Backend Developer | DevOps | AI/ML Engineer</span>
           </motion.p>
@@ -129,7 +129,7 @@ const Hero = () => {
           <motion.p
             custom={2}
             variants={textVariants}
-            className="text-lg sm:text-xl text-gray-400 dark:text-gray-400 light:text-gray-600 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-gray-400 dark:text-gray-400 light:text-gray-600 max-w-2xl mx-auto leading-relaxed px-4"
           >
             I specialize in Backend Development using Python, DevOps practices, and AI/ML engineering 
             with hands-on experience in AWS cloud services and data science projects.

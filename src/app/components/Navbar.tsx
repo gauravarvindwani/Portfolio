@@ -46,7 +46,7 @@ const Navbar = () => {
           opacity: isVisible ? 1 : 0 
         }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
-        className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50"
+        className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-auto max-w-[95vw]"
       >
         <motion.div
           className="backdrop-blur-md border bg-slate-900/80 dark:bg-slate-900/80 light:bg-white/80 border-slate-700/50 dark:border-slate-700/50 light:border-slate-300/50 shadow-2xl shadow-blue-500/20 rounded-full px-6 py-3"
@@ -114,14 +114,14 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.8, x: 20 }}
+        initial={{ opacity: 0, scale: 0.8, y: -20 }}
         animate={{ 
           opacity: isMobileMenuOpen ? 1 : 0,
           scale: isMobileMenuOpen ? 1 : 0.8,
-          x: isMobileMenuOpen ? 0 : 20
+          y: isMobileMenuOpen ? 0 : -20
         }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
-        className={`fixed top-1/2 right-20 transform -translate-y-1/2 z-40 md:hidden ${
+        className={`fixed top-20 left-1/2 transform -translate-x-1/2 z-40 md:hidden w-80 max-w-[90vw] ${
           isMobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
         }`}
       >
