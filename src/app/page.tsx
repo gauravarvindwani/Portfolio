@@ -12,20 +12,20 @@ import DynamicBackground from './components/DynamicBackground';
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative overflow-x-hidden">
+    <div className="min-h-screen relative overflow-x-hidden w-full">
       <DynamicBackground />
       <ThemeChanger />
       <PageJourney />
       <CursorTrail />
       {/* <SectionIndicator /> */}
       <Navbar />
-      <div className="w-full">
+      <main className="w-full max-w-full">
         <Hero />
         <About />
         <Experience />
         <Projects />
         <Contact />
-      </div>
+      </main>
     </div>
   );
 }
